@@ -1,3 +1,4 @@
+const result = document.getElementById('result');
 
 const myPerson = {
     fullName:'Artem',
@@ -16,11 +17,13 @@ const myPerson = {
 
 const copyMyPerson = {...myPerson,
 occupation:{
-    'Place of work' : 'metalworking plant',
-    'job title': 'turner',
+    'Place of work' : 'Metalworking plant',
+    'Job title': 'Turner',
 },
 };
-console.log(copyMyPerson.occupation['job title'])
+console.log(copyMyPerson.occupation['Job title'])
+
+result.innerHTML = `Result - ${copyMyPerson.occupation['Job title']}`;
 
 
 
