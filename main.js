@@ -11,7 +11,7 @@ const myPerson = {
     hasCats:true,
     hobbies:['WARHAMMER 40000','CrossFit','Hunting'],
     greeting:()=>{
-        return `Hey, my name is ${this.fullName}`
+        return `Hey, my name is ${fullName}`
     },
 };
 
